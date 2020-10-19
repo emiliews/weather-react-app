@@ -28,7 +28,6 @@ export default function Box() {
             Now{" "}
           </h4>
           <div className="card-text">
-            <span id="temp"> {weatherData.temperature} </span>
             <span className="tempUnit" id="tempUnit">
               <a href="/" id="celsius-link" className="active temp">
                 °C
@@ -46,32 +45,7 @@ export default function Box() {
                 style={{ width: 60, height: 60 }}
               />
             </span>
-            <div className="row" id="tempwindhum">
-              <div className="col-4">
-                <strong> Temperatures </strong>
-              </div>
-              <div className="col-4">
-                <strong> Wind </strong>
-              </div>
-              <div className="col-4">
-                <strong> Humidity </strong>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-4">
-                <span id="maxTemp"> {weatherData.maxTemp}</span>
-                <span>°</span> |{" "}
-                <span id="minTemp"> {weatherData.minTemp} </span>
-                <span>°</span>
-              </div>
-              <div className="col-4">
-                <span id="wind"> {weatherData.wind} </span> <span> m/s</span>
-              </div>
-              <div className="col-4">
-                <span id="humidity"> {weatherData.humidity} </span>{" "}
-                <span> %</span>
-              </div>
-            </div>
+           
           </div>
         </div>
       </div>
