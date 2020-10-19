@@ -2,18 +2,15 @@ import React from 'react';
 
 import './App.css';
 import Box from './Box';
+import Search from "./Search"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
-        <h1>
-          Hello World
-        </h1>
-        <Box/>
-       
-      </header>
+      <div className="Body">
+        <Search />
+        <Box />
+      </div>
     </div>
   );
 }
