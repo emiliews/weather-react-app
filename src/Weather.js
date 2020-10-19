@@ -116,6 +116,12 @@ export default function Box() {
             </Row>  
       </div>
       <br/>
+      <br/>
+      <br/>
+      <br/>
+      <p>
+          <a href="https://github.com/emiliews/weather-react-app" target="blank">Open source code</a> by Emilie Lolk Wolff-Sneedorff
+      </p>
     </Container>
   );
 }
