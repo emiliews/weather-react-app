@@ -76,7 +76,7 @@ export default function Box() {
                         </Col>
                     </Row> 
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            {/* <Button variant="primary">Go somewhere</Button>  */}
         </Card.Body>
       </Card>
     </Container>
