@@ -1,6 +1,6 @@
 import React from "react";
 import "./Box.css";
-import { Col, Container, Row, Card, Button } from "react-bootstrap";
+import { Col, Container, Row, Card } from "react-bootstrap";
 
 
 export default function Box() {
