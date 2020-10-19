@@ -5,7 +5,6 @@
 .card {
   margin: 0 auto;
   text-align: center;
-  border-color: green;
   border-radius: 10px;
   font-weight: 400;
   font-size: 28px;
@@ -14,9 +13,17 @@
   margin-bottom: 20px;
 }
 
-#tempwindhum {
-  font-size: 24px;
+#day {
+  font-size: 35px;
   font-weight: 350;
+}
+
+#time {
+  font-size: 25px;
+}
+
+#tempwindhum {
+  font-size: 22px;
 }
 
 #weather-numbers {
