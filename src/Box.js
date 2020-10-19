@@ -28,57 +28,50 @@ export default function Box() {
             Now{" "}
           </h4>
           <div className="card-text">
-            <Container>
-                <span id="temp"> {weatherData.temperature} </span>
-                <span className="tempUnit" id="tempUnit">
-                <a href="/" id="celsius-link" className="active temp">
-                    °C
-                </a>{" "}
-                |{" "}
-                <a href="/" id="fahrenheit-link" className="temp">
-                    °F
-                </a>
-                </span>
-                &#8287;&#8287;&#8287;&#8287;{" "}
-                <span>
-                <img
-                    src={weatherData.imgUrl}
-                    alt={weatherData.description}
-                    style={{ width: 60, height: 60 }}
-                />
-                </span>
-               
-                <Row>
-                    <Col>
-                        <strong> Temperatures </strong>
-                    </Col>
-                
-                    <Col>
-                        <strong> Wind </strong>
-                    </Col>
-                    <Col>
-                        <strong> Humidity </strong>
-                    </Col>
-                </Row>
-                
-                
-                <Row>
-                    <Col>
-                        <span id="maxTemp"> {weatherData.maxTemp}</span>
-                        <span>°</span> |{" "}
-                        <span id="minTemp"> {weatherData.minTemp} </span>
-                        <span>°</span>
-                    </Col>
-                    <Col>
-                        <span id="wind"> {weatherData.wind} </span> <span> m/s</span>
-                    </Col>
-                    <Col>
-                        <span id="humidity"> {weatherData.humidity} </span>{" "}
-                        <span> %</span>
-                    </Col>
-                </Row>
-            </Container>
-          </div>
+            <span id="temp"> {weatherData.temperature} </span>
+            <span className="tempUnit" id="tempUnit">
+              <a href="/" id="celsius-link" className="active temp">
+                °C
+              </a>{" "}
+              |{" "}
+              <a href="/" id="fahrenheit-link" className="temp">
+                °F
+              </a>
+            </span>
+            &#8287;&#8287;&#8287;&#8287;{" "}
+            <span>
+              <img
+                src={weatherData.imgUrl}
+                alt={weatherData.description}
+                style={{ width: 60, height: 60 }}
+              />
+            </span>
+            <div className="row" id="tempwindhum">
+              <div className="col-4">
+                <strong> Temperatures </strong>
+              </div>
+              <div className="col-4">
+                <strong> Wind </strong>
+              </div>
+              <div className="col-4">
+                <strong> Humidity </strong>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-4">
+                <span id="maxTemp"> {weatherData.maxTemp}</span>
+                <span>°</span> |{" "}
+                <span id="minTemp"> {weatherData.minTemp} </span>
+                <span>°</span>
+              </div>
+              <div className="col-4">
+                <span id="wind"> {weatherData.wind} </span> <span> m/s</span>
+              </div>
+              <div className="col-4">
+                <span id="humidity"> {weatherData.humidity} </span>{" "}
+                <span> %</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
