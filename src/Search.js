@@ -13,6 +13,7 @@ export default function Search() {
           Current city
         </button>
       </form>
+      
     </div>
   );
 }

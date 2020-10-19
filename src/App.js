@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
-import Box from './Box';
+import Weather from './Weather';
 import Search from "./Search"
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <div className="Body">
         <Search />
-        <Box />
+        <Weather />
       </div>
     </div>
   );

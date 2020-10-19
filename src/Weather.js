@@ -1,5 +1,5 @@
 import React from "react";
-import "./Box.css";
+import "./Weather.css";
 import { Col, Container, Row, Card } from "react-bootstrap";
 
 
@@ -79,6 +79,43 @@ export default function Box() {
             {/* <Button variant="primary">Go somewhere</Button>  */}
         </Card.Body>
       </Card>
+      <div id="forecast">
+           <Row md={5} >
+                <Col >
+                    Monday
+                </Col>
+                <Col  >
+                     Tuesday
+                </Col>
+                <Col  >
+                     Wednesday
+                </Col>
+                <Col >
+                    Thursday
+                   </Col>
+                <Col >
+                    Friday
+                </Col>
+            </Row> 
+            <Row md={5}>
+                <Col >
+                    temp
+                </Col>
+                <Col  >
+                     temp
+                </Col>
+                <Col  >
+                     temp
+                </Col>
+                <Col >
+                    temp
+                   </Col>
+                <Col >
+                    temp
+                </Col>
+            </Row>  
+      </div>
+      <br/>
     </Container>
   );
 }
