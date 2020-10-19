@@ -13,6 +13,7 @@ export default function Box() {
     humidity: 80,
     wind: 10
   };
+  
   return (
     <div className="Box">
       <h1 id="city-header">{weatherData.city}</h1>
