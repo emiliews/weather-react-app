@@ -22,7 +22,7 @@ export default function Box() {
             {weatherData.city}
         </h1>
         <hr />
-      <Card border="success" style={{ width: '28rem' }}>
+      <Card border="success" style={{ width: '35rem' }} >
         <Card.Body>
             <Card.Title id="day"> Today </Card.Title>
             
@@ -49,18 +49,32 @@ export default function Box() {
                     />
                 </span> 
                 
-                    <Row id="tempwindhum">
-                        <Col md={4}>
+                    <Row md={3} id="tempwindhum">
+                        <Col >
                             <strong> Temperatures </strong>
                         </Col>
-                        <Col  md={4}>
+                        <Col  >
                             <strong> Wind </strong>
                         </Col>
-                        <Col  md={4}>
+                        <Col  >
                             <strong> Humidity </strong>
                         </Col>
                     </Row> 
-                        
+                    <Row md={3} id="weathervalues">
+                        <Col >
+                            <span id="maxTemp"> {weatherData.maxTemp}</span>
+                            <span>°</span> |{" "}
+                            <span id="minTemp"> {weatherData.minTemp} </span>
+                            <span>°</span>
+                        </Col>
+                        <Col  >
+                            <span id="wind"> {weatherData.wind} </span> <span> m/s</span>
+                        </Col>
+                        <Col  >
+                            <span id="humidity"> {weatherData.humidity} </span>{" "}
+                            <span> %</span>
+                        </Col>
+                    </Row> 
             </Card.Text>
             <Button variant="primary">Go somewhere</Button>
         </Card.Body>
