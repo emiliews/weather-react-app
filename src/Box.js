@@ -1,8 +1,7 @@
 import React from "react";
 import "./Box.css";
-import Card from 'react-bootstrap/Card'
-import Button from 'react-bootstrap/Button'
-import { Col } from "react-bootstrap";
+import { Col, Container, Row, Card, Button } from "react-bootstrap";
+
 
 export default function Box() {
   let weatherData = {
@@ -18,15 +17,15 @@ export default function Box() {
   };
   
   return (
-    <div className="Box">
+    <Container id="Box">
         <h1 id="city-header">
             {weatherData.city}
         </h1>
         <hr />
-      <Card style={{ width: '28rem' }}>
+      <Card border="success" style={{ width: '28rem' }}>
         <Card.Body>
             <Card.Title id="day"> Today </Card.Title>
-            <br/>
+            
             <Card.Title id="time">    {" "}
             Now{" "} </Card.Title>
            
@@ -49,21 +48,23 @@ export default function Box() {
                         style={{ width: 60, height: 60 }}
                     />
                 </span> 
-                <Row id="tempwindhum">
-                    <Col>
-                        <strong> Temperatures </strong>
-                    </Col>
-                    <Col>
-                    
-                    </Col>
-                    <Col>
-                    
-                    </Col>
-                </Row>          
+                
+                    <Row id="tempwindhum">
+                        <Col md={4}>
+                            <strong> Temperatures </strong>
+                        </Col>
+                        <Col  md={4}>
+                            <strong> Wind </strong>
+                        </Col>
+                        <Col  md={4}>
+                            <strong> Humidity </strong>
+                        </Col>
+                    </Row> 
+                        
             </Card.Text>
             <Button variant="primary">Go somewhere</Button>
         </Card.Body>
       </Card>
-    </div>
+    </Container>
   );
 }
