@@ -1,5 +1,7 @@
 import React from "react";
 import "./Box.css";
+import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
 
 export default function Box() {
   let weatherData = {
@@ -16,39 +18,15 @@ export default function Box() {
   
   return (
     <div className="Box">
-      <h1 id="city-header">{weatherData.city}</h1>
-      <hr />
-      <div className="card text-center">
-        <div className="card-body">
-          <h2 className="card-title" id="day">
-            Today
-          </h2>
-          <h4 className="card-title" id="time">
-            {" "}
-            Now{" "}
-          </h4>
-          <div className="card-text">
-            <span className="tempUnit" id="tempUnit">
-              <a href="/" id="celsius-link" className="active temp">
-                °C
-              </a>{" "}
-              |{" "}
-              <a href="/" id="fahrenheit-link" className="temp">
-                °F
-              </a>
-            </span>
-            &#8287;&#8287;&#8287;&#8287;{" "}
-            <span>
-              <img
-                src={weatherData.imgUrl}
-                alt={weatherData.description}
-                style={{ width: 60, height: 60 }}
-              />
-            </span>
-           
-          </div>
-        </div>
-      </div>
+      <Card style={{ width: '18rem' }}>
+        <Card.Body>
+            <Card.Title id="city-header">{weatherData.city}</Card.Title>
+            <Card.Text>
+            Some quick example text to build on the card title and make up the bulk of the card's content.
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+        </Card.Body>
+      </Card>
     </div>
   );
 }
