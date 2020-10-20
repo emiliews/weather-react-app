@@ -62,18 +62,18 @@ a:hover {
   color: rgb(19, 170, 52);
 }
 
-div.days .row .col-2 {
-  display: inline-block;
-  text-align: center;
-  margin: 15px 0 35px 0;
-  font-weight: 400;
-  font-size: 24px;
-  color: green;
-}
+/* div.days .row .col-2 { */
+/* display: inline-block; */
+/* text-align: center; */
+/* margin: 15px 0 35px 0; */
+/* font-weight: 400; */
+/* font-size: 24px; */
+/* color: green; */
+/* } */
 
-div.days .row .windrain {
-  font-size: 20px;
-}
+/* div.days .row .windrain { */
+/* font-size: 20px; */
+/* } */
 
 #tempUnit {
   font-size: 22px;
