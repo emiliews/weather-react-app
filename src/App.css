@@ -3,5 +3,6 @@
   text-align: center;
   /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
   background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
-  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 100px;
 }
