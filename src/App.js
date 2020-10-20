@@ -11,6 +11,15 @@ function App() {
       <div className="Body">
         <Search />
         <Weather />
+        <footer>
+          <a href="https://github.com/emiliews/weather-react-app" target="blank">Open source code</a> by Emilie Lolk Wolff-Sneedorff
+        </footer>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        
       </div>
     </div>
   );
