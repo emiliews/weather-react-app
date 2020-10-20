@@ -2,7 +2,7 @@
   color: green;
 }
 
-.card {
+#weather-now {
   margin: 0 auto;
   text-align: center;
   border-radius: 10px;
@@ -11,6 +11,8 @@
   color: green;
   /* max-width: 700px; */
   margin-bottom: 20px;
+  border: 1px solid green;
+  padding: 10px 10px 20px 10px;
 }
 
 #city-header {
@@ -62,19 +64,6 @@ a {
 a:hover {
   color: rgb(19, 170, 52);
 }
-
-/* div.days .row .col-2 { */
-/* display: inline-block; */
-/* text-align: center; */
-/* margin: 15px 0 35px 0; */
-/* font-weight: 400; */
-/* font-size: 24px; */
-/* color: green; */
-/* } */
-
-/* div.days .row .windrain { */
-/* font-size: 20px; */
-/* } */
 
 #tempUnit {
   font-size: 22px;

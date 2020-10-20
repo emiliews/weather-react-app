@@ -1,6 +1,6 @@
 import React from "react";
 import "./Weather.css";
-import { Col, Container, Row, Card } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 
 
 export default function Box() {
@@ -22,14 +22,14 @@ export default function Box() {
             {weatherData.city}
         </h1>
         <hr />
-      <Card border="success" style={{ width: '35rem' }} >
-        <Card.Body>
-            <Card.Title id="day"> Today </Card.Title>
+      <div id="weather-now"  style={{ width: '35rem' }} >
+        
+            <h2 id="day"> Today </h2>
             
-            <Card.Title id="time">    {" "}
-            Now{" "} </Card.Title>
+            <h4 id="time">    {" "}
+            Now{" "} </h4>
            
-            <Card.Text>
+            <div>
                 <span id="temp"> {weatherData.temperature} </span>
                 <span className="tempUnit" id="tempUnit">
                     <a href="/" id="celsius-link" className="active temp">
@@ -75,10 +75,10 @@ export default function Box() {
                             <span> %</span>
                         </Col>
                     </Row> 
-            </Card.Text>
+            </div>
             {/* <Button variant="primary">Go somewhere</Button>  */}
-        </Card.Body>
-      </Card>
+        
+      </div>
       <div id="forecast">
            <Row md={5} >
                 <Col >
